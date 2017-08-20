@@ -1,0 +1,189 @@
+#test rules
+#alert tcp any any -> any 80 (msg:"gilgil rule"; content:"GET /"; content:"Host: www.gilgil.net"; sid:10001; rev:1;)
+#alert tcp any any -> any 80 (msg:"naver rule"; content:"GET /"; content:"Host: www.naver.com"; sid:10002; rev:1;)
+#alert tls any any -> any any (msg:"TLS Alert facebook SNI"; tls_sni; content:"www.facebook.com"; sid:10005; rev:1;)
+#alert dns any any -> any any (msg:"DNS Alert facebook"; dns_query; content:"www.facebook.com"; sid:10006; rev:1;)
+
+####SSL Sites####################
+alert tls any any -> any any (msg:"TLS Alert sex.com"; tls_sni; content:"www.sex.com"; sid:10001; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert sex.com"; tls_sni; content:"sex.com"; sid:10002; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert sex.com"; dns_query; content:"www.sex.com"; sid:20001; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert sex.com"; dns_query; content:"sex.com"; sid:20002; rev:1;)
+
+#########################################
+
+alert tls any any -> any any (msg:"TLS Alert facebook.com and Mr.choi"; tls_sni; content:"www.facebook.com"; sid:10003; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert facebook.com and Mr.choi"; tls_sni; content:"facebook.com"; sid:10004; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert facebook.com and Mr.choi"; dns_query; content:"www.facebook.com"; sid:20003; rev:1;)
+alert dns any any -> any any (msg:"DNS facebook.com and Mr.choi"; dns_query; content:"facebook.com"; sid:20004; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert mtbucks.com"; tls_sni; content:"www.mtbucks.com"; sid:10005; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert mtbucks.com"; tls_sni; content:"mtbucks.com"; sid:10006; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert mtbucks.com"; dns_query; content:"www.facebook.com"; sid:20005; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert mtbucks.com"; dns_query; content:"mtbucks.com"; sid:20006; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert opioids.com"; tls_sni; content:"www.opioids.com"; sid:10007; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert opioids.com"; tls_sni; content:"opioids.com"; sid:10008; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert opioids.com"; dns_query; content:"www.opioids.com"; sid:20007; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert opioids.com"; dns_query; content:"opioids.com"; sid:20008; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert yobit.net"; tls_sni; content:"www.yobit.net"; sid:10009; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert yobit.net"; tls_sni; content:"yobit.net"; sid:10010; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert yobit.net"; dns_query; content:"www.yobit.net"; sid:20009; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert yobit.net"; dns_query; content:"yobit.net"; sid:20010; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert torrentkim10.net"; tls_sni; content:"www.torrentkim10.net"; sid:10011; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert torrentkim10.net"; tls_sni; content:"torrentkim10.net"; sid:10012; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert torrentkim10.net"; dns_query; content:"www.torrentkim10.net"; sid:20011; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert torrentkim10.net"; dns_query; content:"torrentkim10.net"; sid:20012; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert graphgame.net"; tls_sni; content:"www.graphgame.net"; sid:10013; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert graphgame.net"; tls_sni; content:"graphgame.net"; sid:10014; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert graphgame.net"; dns_query; content:"www.graphgame.net"; sid:20013; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert graphgame.net"; dns_query; content:"graphgame.net"; sid:20014; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert phishtank.com"; tls_sni; content:"www.phishtank.com"; sid:10015; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert phishtank.com"; tls_sni; content:"phishtank.com"; sid:10016; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert phishtank.com"; dns_query; content:"www.phishtank.com"; sid:20015; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert graphgame.net"; dns_query; content:"phishtank.com"; sid:20016; rev:1;)
+
+#########################################
+# no more service
+#alert tls any any -> any any (msg:"TLS Alert mujige53770.wixsite.com"; tls_sni; content:"mujige53770.wixsite.com"; sid:10017; rev:1;)
+#alert tls any any -> any any (msg:"TLS Alert mujige53770.wixsite.com"; tls_sni; content:"mujige53770.wixsite.com"; sid:10018; rev:1;)
+
+#alert dns any any -> any any (msg:"DNS Alert mujige53770.wixsite.com"; dns_query; content:"mujige53770.wixsite.com"; sid:20017; rev:1;)
+#alert dns any any -> any any (msg:"DNS Alert mujige53770.wixsite.com"; dns_query; content:"mujige53770.wixsite.com"; sid:20018; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert torrenthaja.com"; tls_sni; content:"www.torrenthaja.com"; sid:10019; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert torrenthaja.com"; tls_sni; content:"torrenthaja.com"; sid:10020; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert torrenthaja.com"; dns_query; content:"www.torrenthaja.com"; sid:20019; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert torrenthaja.com"; dns_query; content:"torrenthaja.com"; sid:20020; rev:1;)
+
+#########################################
+alert tls any any -> any any (msg:"TLS Alert webtoon.bamtoki.com"; tls_sni; content:"webtoon.bamtoki.com"; sid:10021; rev:1;)
+alert tls any any -> any any (msg:"TLS Alert bamtoki.com"; tls_sni; content:"bamtoki.com"; sid:10022; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert webtoon.bamtoki.com"; dns_query; content:"webtoon.bamtoki.com"; sid:20021; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert bamtoki.com"; dns_query; content:"bamtoki.com"; sid:20022; rev:1;)
+
+####HTTP Sites####################
+alert tcp any any -> any 80 (msg:"uriminzokkiri rule"; content:"GET /"; content:"Host: www.uriminzokkiri.com"; sid:10023; rev:1;)
+alert tcp any any -> any 80 (msg:"uriminzokkiri rule"; content:"GET /"; content:"Host: uriminzokkiri.com"; sid:10024; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert uriminzokkiri.com"; dns_query; content:"www.uriminzokkiri.com"; sid:20023; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert uriminzokkiri.com"; dns_query; content:"uriminzokkiri.com"; sid:20024; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"uriminzokkiri rule"; content:"GET /"; content:"Host: www.uriminzokkiri.com"; sid:10025; rev:1;)
+alert tcp any any -> any 80 (msg:"uriminzokkiri rule"; content:"GET /"; content:"Host: uriminzokkiri.com"; sid:10026; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert uriminzokkiri.com"; dns_query; content:"www.uriminzokkiri.com"; sid:20025; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert uriminzokkiri.com"; dns_query; content:"uriminzokkiri.com"; sid:20026; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"ilbe.com/ilbe rule"; content:"GET /ilbe"; content:"Host: www.ilbe.com"; sid:10027; rev:1;)
+alert tcp any any -> any 80 (msg:"ilbe.com/ilbe rule"; content:"GET /ilbe"; content:"Host: ilbe.com"; sid:10028; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert ilbe.com"; dns_query; content:"www.ilbe.com"; sid:20027; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert ilbe.com"; dns_query; content:"ilbe.com"; sid:20028; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"faa25.com rule"; content:"GET /"; content:"Host: www.faa25.com"; sid:10029; rev:1;)
+alert tcp any any -> any 80 (msg:"faa25.com rule"; content:"GET /"; content:"Host: faa25.com"; sid:10030; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert faa25.com"; dns_query; content:"www.faa25.com"; sid:20029; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert faa25.com"; dns_query; content:"faa25.com"; sid:20030; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"narutoxxx.com rule"; content:"GET /"; content:"Host: www.narutoxxx.com"; sid:10031; rev:1;)
+alert tcp any any -> any 80 (msg:"narutoxxx.com rule"; content:"GET /"; content:"Host: narutoxxx.com"; sid:10032; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert narutoxxx.com"; dns_query; content:"www.narutoxxx.com"; sid:20031; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert narutoxxx.com"; dns_query; content:"narutoxxx.com"; sid:20032; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"umj262.com rule"; content:"GET /"; content:"Host: www.umj262.com"; sid:10033; rev:1;)
+alert tcp any any -> any 80 (msg:"umj262.com rule"; content:"GET /"; content:"Host: umj262.com"; sid:10034; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert umj262.com"; dns_query; content:"www.umj262.com"; sid:20033; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert umj262.com"; dns_query; content:"umj262.com"; sid:20034; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"minjok.com rule"; content:"GET /"; content:"Host: www.minjok.com"; sid:10035; rev:1;)
+alert tcp any any -> any 80 (msg:"minjok.com rule"; content:"GET /"; content:"Host: minjok.com"; sid:10036; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert minjok.com"; dns_query; content:"www.minjok.com"; sid:20035; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert minjok.com"; dns_query; content:"minjok.com"; sid:20036; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"4shared.com rule"; content:"GET /"; content:"Host: www.4shared.com"; sid:10037; rev:1;)
+alert tcp any any -> any 80 (msg:"4shared.com rule"; content:"GET /"; content:"Host: 4shared.com"; sid:10038; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert 4shared.com"; dns_query; content:"www.4shared.com"; sid:20037; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert 4shared.com"; dns_query; content:"4shared.com"; sid:20038; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"kcna.kp rule"; content:"GET /"; content:"Host: www.kcna.kp"; sid:10039; rev:1;)
+alert tcp any any -> any 80 (msg:"kcna.kp rule"; content:"GET /"; content:"Host: kcna.kp"; sid:10040; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert kcna.kp"; dns_query; content:"www.kcna.kp"; sid:20039; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert kcna.kp"; dns_query; content:"kcna.kp"; sid:20040; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"pornpros.com rule"; content:"GET /"; content:"Host: www.pornpros.com"; sid:10041; rev:1;)
+alert tcp any any -> any 80 (msg:"pornpros.com rule"; content:"GET /"; content:"Host: pornpros.com"; sid:10042; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert pornpros.com"; dns_query; content:"www.pornpros.com"; sid:20041; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert pornpros.com"; dns_query; content:"pornpros.com"; sid:20042; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"kimmadam.net rule"; content:"GET /"; content:"Host: www.kimmadam.net"; sid:10043; rev:1;)
+alert tcp any any -> any 80 (msg:"kimmadam.net rule"; content:"GET /"; content:"Host: kimmadam.net"; sid:10044; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert kimmadam.net"; dns_query; content:"www.kimmadam.net"; sid:20043; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert kimmadam.net"; dns_query; content:"kimmadam.net"; sid:20044; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"kitribob.wiki/wiki/ rule"; content:"GET /wiki"; content:"Host: www.kitribob.wiki"; sid:10045; rev:1;)
+alert tcp any any -> any 80 (msg:"kitribob.wiki/wiki/ rule"; content:"GET /wiki"; content:"Host: www.kitribob.wiki"; sid:10046; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert kitribob.wiki"; dns_query; content:"www.kitribob.wiki"; sid:20045; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert kitribob.wiki"; dns_query; content:"kitribob.wiki"; sid:20046; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"chosonsinbo.com rule"; content:"GET /"; content:"Host: www.chosonsinbo.com"; sid:10047; rev:1;)
+alert tcp any any -> any 80 (msg:"chosonsinbo.com rule"; content:"GET /"; content:"Host: chosonsinbo.com"; sid:10048; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert chosonsinbo.com"; dns_query; content:"www.chosonsinbo.com"; sid:20047; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert chosonsinbo.com"; dns_query; content:"chosonsinbo.com"; sid:20048; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"bamwar25.com rule"; content:"GET /"; content:"Host: www.bamwar25.com"; sid:10049; rev:1;)
+alert tcp any any -> any 80 (msg:"bamwar25.com rule"; content:"GET /"; content:"Host: bamwar25.com"; sid:10050; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert bamwar25.com"; dns_query; content:"www.bamwar25.com"; sid:20049; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert bamwar25.com"; dns_query; content:"bamwar25.com"; sid:20050; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"hitomi.la rule"; content:"GET /"; content:"Host: www.hitomi.la"; sid:10051; rev:1;)
+alert tcp any any -> any 80 (msg:"hitomi.la rule"; content:"GET /"; content:"Host: hitomi.la"; sid:10052; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert hitomi.la"; dns_query; content:"www.hitomi.la"; sid:20051; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert hitomi.la"; dns_query; content:"hitomi.la"; sid:20052; rev:1;)
