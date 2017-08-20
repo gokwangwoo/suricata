@@ -335,3 +335,17 @@ alert tcp any any -> any 80 (msg:"linoit.com/users/men1212/canvases/19%EA%B8%88%
 
 alert dns any any -> any any (msg:"DNS Alert linoit.com"; dns_query; content:"www.linoit.com"; sid:20091; rev:1;)
 alert dns any any -> any any (msg:"DNS Alert linoit.com"; dns_query; content:"linoit.com"; sid:20092; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"kass.org.kp rule"; content:"GET /"; content:"Host: www.kass.org.kp"; sid:10093; rev:1;)
+alert tcp any any -> any 80 (msg:"kass.org.kp rule"; content:"GET /"; content:"Host: kass.org.kp"; sid:10094; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert kass.org.kp"; dns_query; content:"www.kass.org.kp"; sid:20093; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert kass.org.kp"; dns_query; content:"kass.org.kp"; sid:20094; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"gnu.rep.kp rule"; content:"GET /"; content:"Host: www.gnu.rep.kp"; sid:10095; rev:1;)
+alert tcp any any -> any 80 (msg:"gnu.rep.kp rule"; content:"GET /"; content:"Host: gnu.rep.kp"; sid:10096; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert gnu.rep.kp"; dns_query; content:"www.gnu.rep.kp"; sid:20095; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert gnu.rep.kp"; dns_query; content:"gnu.rep.kp"; sid:20096; rev:1;)
