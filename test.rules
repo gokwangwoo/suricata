@@ -187,3 +187,151 @@ alert tcp any any -> any 80 (msg:"hitomi.la rule"; content:"GET /"; content:"Hos
 
 alert dns any any -> any any (msg:"DNS Alert hitomi.la"; dns_query; content:"www.hitomi.la"; sid:20051; rev:1;)
 alert dns any any -> any any (msg:"DNS Alert hitomi.la"; dns_query; content:"hitomi.la"; sid:20052; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"winclub88.net rule"; content:"GET /my/4D.html"; content:"Host: www.winclub88.net"; sid:10053; rev:1;)
+alert tcp any any -> any 80 (msg:"winclub88.net rule"; content:"GET /my/4D.html"; content:"Host: winclub88.net"; sid:10054; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert winclub88.net"; dns_query; content:"www.winclub88.net"; sid:20053; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert winclub88.net"; dns_query; content:"winclub88.net"; sid:20054; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"named.com rule"; content:"GET /game/ladder/v2_index.php"; content:"Host: www.named.com"; sid:10055; rev:1;)
+alert tcp any any -> any 80 (msg:"named.com rule"; content:"GET /game/ladder/v2_index.php"; content:"Host: named.com"; sid:10056; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert named.com"; dns_query; content:"www.named.com"; sid:20055; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert named.com"; dns_query; content:"named.com"; sid:20056; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"torenzoa.net rule"; content:"GET /"; content:"Host: www.torenzoa.net"; sid:10057; rev:1;)
+alert tcp any any -> any 80 (msg:"torenzoa.net rule"; content:"GET /"; content:"Host: torenzoa.net"; sid:10058; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert torenzoa.net"; dns_query; content:"www.torenzoa.net"; sid:20057; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert torenzoa.net"; dns_query; content:"torenzoa.net"; sid:20058; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"avnana.com rule"; content:"GET /"; content:"Host: www.avnana.com"; sid:10059; rev:1;)
+alert tcp any any -> any 80 (msg:"avnana.com rule"; content:"GET /"; content:"Host: avnana.com"; sid:10060; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert avnana.com"; dns_query; content:"www.avnana.com"; sid:20059; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert avnana.com"; dns_query; content:"avnana.com"; sid:20060; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"naver6.com rule"; content:"GET /"; content:"Host: www.naver6.com"; sid:10061; rev:1;)
+alert tcp any any -> any 80 (msg:"naver6.com rule"; content:"GET /"; content:"Host: naver6.com"; sid:10062; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert naver6.com"; dns_query; content:"www.naver6.com"; sid:20061; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert naver6.com"; dns_query; content:"naver6.com"; sid:20062; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"naver.cm rule"; content:"GET /"; content:"Host: www.naver.cm"; sid:10063; rev:1;)
+alert tcp any any -> any 80 (msg:"naver.cm rule"; content:"GET /"; content:"Host: naver.cm"; sid:10064; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert naver.cm"; dns_query; content:"www.naver.cm"; sid:20063; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert naver.cm"; dns_query; content:"naver.cm"; sid:20064; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"ks8282.com rule"; content:"GET /"; content:"Host: www.ks8282.com"; sid:10065; rev:1;)
+alert tcp any any -> any 80 (msg:"ks8282.com rule"; content:"GET /"; content:"Host: ks8282.com"; sid:10066; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert ks8282.com"; dns_query; content:"www.ks8282.com"; sid:20065; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert ks8282.com"; dns_query; content:"ks8282.com"; sid:20066; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"sedisk.com rule"; content:"GET /"; content:"Host: www.sedisk.com"; sid:10067; rev:1;)
+alert tcp any any -> any 80 (msg:"sedisk.com rule"; content:"GET /"; content:"Host: sedisk.com"; sid:10068; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert sedisk.com"; dns_query; content:"www.sedisk.com"; sid:20067; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert sedisk.com"; dns_query; content:"sedisk.com"; sid:20068; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"sk386.com rule"; content:"GET /"; content:"Host: www.sk386.com"; sid:10069; rev:1;)
+alert tcp any any -> any 80 (msg:"sk386.com rule"; content:"GET /"; content:"Host: sk386.com"; sid:10070; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert sk386.com"; dns_query; content:"www.sk386.com"; sid:20069; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert sk386.com"; dns_query; content:"sk386.com"; sid:20070; rev:1;)
+
+
+#########################################
+alert tcp any any -> any 80 (msg:"tcosc.net rule"; content:"GET /"; content:"Host: www.tcosc.net"; sid:10071; rev:1;)
+alert tcp any any -> any 80 (msg:"tcosc.net rule"; content:"GET /"; content:"Host: tcosc.net"; sid:10072; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert tcosc.net"; dns_query; content:"www.tcosc.net"; sid:20071; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert tcosc.net"; dns_query; content:"tcosc.net"; sid:20072; rev:1;)
+
+#########################################
+# redirection to anti666.com
+#alert tcp any any -> any 80 (msg:"박근혜.com rule"; content:"GET /"; content:"Host: www.박근혜.com"; sid:10073; rev:1;)
+#alert tcp any any -> any 80 (msg:"박근혜.com rule"; content:"GET /"; content:"Host: 박근혜.com"; sid:10074; rev:1;)
+
+#alert dns any any -> any any (msg:"DNS Alert 박근혜.com"; dns_query; content:"www.박근혜.com"; sid:20073; rev:1;)
+#alert dns any any -> any any (msg:"DNS Alert 박근혜.com"; dns_query; content:"박근혜.com"; sid:20074; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"anti666.com rule"; content:"GET /"; content:"Host: www.anti666.com"; sid:10075; rev:1;)
+alert tcp any any -> any 80 (msg:"anti666.com rule"; content:"GET /"; content:"Host: anti666.com"; sid:10076; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert anti666.com"; dns_query; content:"www.anti666.com"; sid:20075; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert anti666.com"; dns_query; content:"anti666.com"; sid:20076; rev:1;)
+
+#########################################
+# redirection to zipbogo.net
+#alert tcp any any -> any 80 (msg:"bogobogo.net rule"; content:"GET /"; content:"Host: www.bogobogo.net"; sid:10077; rev:1;)
+#alert tcp any any -> any 80 (msg:"bogobogo.net rule"; content:"GET /"; content:"Host: bogobogo.net"; sid:10078; rev:1;)
+
+#alert dns any any -> any any (msg:"DNS Alert bogobogo.net"; dns_query; content:"www.bogobogo.net"; sid:20077; rev:1;)
+#alert dns any any -> any any (msg:"DNS Alert bogobogo.net"; dns_query; content:"bogobogo.net"; sid:20078; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"snoopspy.com/download rule"; content:"GET /download"; content:"Host: www.snoopspy.com"; sid:10079; rev:1;)
+alert tcp any any -> any 80 (msg:"snoopspy.com/download rule"; content:"GET /download"; content:"Host: snoopspy.com"; sid:10080; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert snoopspy.com"; dns_query; content:"www.snoopspy.com"; sid:20079; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert snoopspy.com"; dns_query; content:"snoopspy.com"; sid:20080; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"test.gilgil.net/streaming/test.mp4 rule"; content:"GET /streaming/test.mp4"; content:"Host: test.gilgil.net/streaming/test.mp4"; sid:10081; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert test.gilgil.net"; dns_query; content:"test.gilgil.net"; sid:20081; rev:1;)
+
+#########################################
+# detect well when i type www.naevr.com
+alert tcp any any -> any 80 (msg:"naevr.com rule"; content:"GET /"; content:"Host: www.naevr.com"; sid:10082; rev:1;)
+alert tcp any any -> any 80 (msg:"naevr.com rule"; content:"GET /"; content:"Host: naevr.com"; sid:10083; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert naevr.com"; dns_query; content:"www.naevr.com"; sid:20082; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert naevr.com"; dns_query; content:"naevr.com"; sid:20083; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"ecloo.tcosc.net rule"; content:"GET /"; content:"Host: ecloo.tcosc.net"; sid:10084; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert ecloo.tcosc.net"; dns_query; content:"ecloo.tcosc.net"; sid:20084; rev:1;)
+
+#########################################
+# Server not found but i alert DNS signature so when i find onaratv dns rule set will detect DNS signature
+alert tcp any any -> any 80 (msg:"onaratv.com rule"; content:"GET /"; content:"Host: www.onaratv.com"; sid:10085; rev:1;)
+alert tcp any any -> any 80 (msg:"onaratv.com rule"; content:"GET /"; content:"Host: onaratv.com"; sid:10086; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert onaratv.com"; dns_query; content:"www.onaratv.com"; sid:20085; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert onaratv.com"; dns_query; content:"onaratv.com"; sid:20086; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"ryomyong.com rule"; content:"GET /"; content:"Host: www.ryomyong.com"; sid:10087; rev:1;)
+alert tcp any any -> any 80 (msg:"ryomyong.com rule"; content:"GET /"; content:"Host: ryomyong.com"; sid:10088; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert ryomyong.com"; dns_query; content:"www.ryomyong.com"; sid:20087; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert ryomyong.com"; dns_query; content:"ryomyong.com"; sid:20088; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"rodong.rep.kp rule"; content:"GET /"; content:"Host: www.rodong.rep.kp"; sid:10089; rev:1;)
+alert tcp any any -> any 80 (msg:"rodong.rep.kp rule"; content:"GET /"; content:"Host: rodong.rep.kp"; sid:10090; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert rodong.rep.kp"; dns_query; content:"www.rodong.rep.kp"; sid:20089; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert rodong.rep.kp"; dns_query; content:"rodong.rep.kp"; sid:20090; rev:1;)
+
+#########################################
+alert tcp any any -> any 80 (msg:"linoit.com/users/men1212/canvases/19%EA%B8%88%20 rule"; content:"GET /users/men1212/canvases/19%EA%B8%88%20"; content:"Host: www.linoit.com"; sid:10091; rev:1;)
+alert tcp any any -> any 80 (msg:"linoit.com/users/men1212/canvases/19%EA%B8%88%20 rule"; content:"GET /users/men1212/canvases/19%EA%B8%88%20"; content:"Host: linoit.com"; sid:10092; rev:1;)
+
+alert dns any any -> any any (msg:"DNS Alert linoit.com"; dns_query; content:"www.linoit.com"; sid:20091; rev:1;)
+alert dns any any -> any any (msg:"DNS Alert linoit.com"; dns_query; content:"linoit.com"; sid:20092; rev:1;)
